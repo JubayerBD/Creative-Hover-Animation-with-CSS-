@@ -1,0 +1,41 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#container{
+  width: 100%;
+  height: 100vh;
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(41,41,41,1) 0%, rgba(0,0,0,1) 55%);
+}
+.second-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  /* background: linear-gradient(253deg, rgba(2,0,36,1) 0%, rgba(61,61,61,1) 0%, rgba(0,0,0,1) 55%); */
+}
+#first-block, #second-block, #third-block{
+  width: 33%;
+  height: 100vh;
+  padding-top: 40%;
+  transition: 1s;
+  color: white;
+  opacity: 0.5;
+  background: linear-gradient(253deg, rgba(2,0,36,1) 0%, rgba(83,83,83,1) 0%, rgba(0,0,0,1) 58%);
+}
+span.one,.two,.three{
+  font-size: 70px;
+  color: white;
+  opacity: 0.3;
+}
+
+/* Hover Effect  */
+
+#first-block:hover,#second-block:hover,#third-block:hover{
+    transform: translate(20px,20px);
+    padding: 20% 20px;
+    opacity: 1;
+}
